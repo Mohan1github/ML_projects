@@ -1,0 +1,111 @@
+.navbar-container{
+  display: flex;
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height:4rem;
+  background-color: rgb(0, 0, 0);
+}
+.navbuttons{
+
+  display: flex;
+  height:4rem;
+  width:15rem;
+  justify-content: space-around;
+  align-items: center;
+  padding-right:10px;
+}
+.nav-img{
+  width:8rem;
+  height:4rem;
+  border-radius: 8px;
+  mix-blend-mode:hard-light;
+
+}
+.nav-btn-1{
+  height:2rem;
+  width:5rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight:800;
+  cursor:pointer;
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+  border: none;
+  color:white;
+  border:solid 1px white;
+}
+
+.nav-btn-2{
+
+  height:2rem;
+  width:5rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight:800;
+  cursor:pointer;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  border:solid 1px white;
+}
+.nav-btn-2:hover{
+  background-color: black;
+  color:white;
+  transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.sidepanel{
+  height:100vh;
+  width:20rem;
+  background: linear-gradient(109.6deg, rgb(0, 37, 84) 11.2%, rgba(0, 37, 84, 0.32) 100.2%);
+  margin-top: 2px;
+  border-radius:8px;
+}
+.search-part{
+  margin-left:20.5rem;
+  height:100vh;
+  background: rgb(0, 0, 0);
+  margin-top:-40rem;
+  display:flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.input-ser{
+  margin-top:3rem;
+  height:1.4rem;
+  width:48rem;
+  border-radius:1px;
+  padding:5px;
+  border:none;
+}
+.input-ser:hover{
+  background-color: rgb(241, 241, 241);
+}
+.ser-btn{
+  height:2.3rem;
+  width:5rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight:800;
+  cursor:pointer;
+  background-color: rgb(0, 0, 0);
+  border-radius: 3px;
+  border: none;
+  color:white;
+  border:solid 1px white;
+  margin-bottom:5px;
+  margin-left:4px;
+}
+.responsegenerator{
+  display: flex;
+  height:50vh;
+  width:50rem;
+  overflow: auto;
+  background: linear-gradient(181deg, rgb(2, 0, 97) 15%, rgb(97, 149, 219) 158.5%);
+  margin-top: 1rem;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  padding: 2rem;
+}
+.footer-sec{
+  width:100%;
+  height: 10rem;
+   background: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
