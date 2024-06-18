@@ -1,2 +1,3 @@
-# MERN_projects
-react, node, express, mongo based projects
+Machine learning projects!!
+Supervise and unsupervised
+Deep learning projects
