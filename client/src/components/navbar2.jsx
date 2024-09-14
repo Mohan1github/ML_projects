@@ -4,8 +4,6 @@ import axios from "axios";
 const Navbar2 = () => {
   const [query,setQuery] =useState("")
   const search=()=>{
-    const getsearchresult = 
-    console.log(query)
   }
   useEffect(()=>{
     search()

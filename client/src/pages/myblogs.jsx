@@ -21,6 +21,7 @@ const Myblogs = () => {
                 <li>
                 <CgProfile size={25} />
                 <h4 style={{marginLeft:"5px"}}>Profile</h4>
+                
                 </li>
                 </Link>
                 <Link style={{textDecoration:"none" ,color:"white"}}>

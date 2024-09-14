@@ -18,9 +18,7 @@ const Blogcarousel = () => {
     initial={{opacity:0,y:100}}
     animate={{opacity:1,y:10}}  
     exit={{opacity:0}}
-    transition={{
-      duration:2
-    }} 
+    transition={{duration:2}} 
         >
     <Slider {...settings}>
         <div className="cardivs">

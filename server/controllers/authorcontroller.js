@@ -2,14 +2,17 @@ const Authors = require("../models/authormodel")
 const createauthor = async(req,res)=>{
     const {name,age,number,country} = req.body
     try{
-        const exists = await Authors.find({name})
+        const exists = await Authors.find({name:name})
         if(exists){
             console.log("author already exist")
             res.status(401).json({msg:"user already exist"})
         }
         else{
             const newauhtor = new Auhtor(
-                {name,age,number,country}
+                {name:name,
+                    age:age,
+                    number:number,
+                    country:country}
             )
             const save = await newauhtor.save()
             if(save){

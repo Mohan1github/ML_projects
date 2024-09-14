@@ -488,7 +488,7 @@ label {
 .myblogsleft {
   height: 97vh;
   width: 15rem;
-  background: #3d3d3d;
+  background: #2b2b2b;
   padding: 10px;
   color: white;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -581,7 +581,16 @@ label {
   display: flex;
   color: black;
   padding: 1rem;
-
+  height:10px;
+  width:12.8rem;
+  row-gap:1rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  align-items: center;
+}
+.myblogsleft li:hover{
+  background-color: #dadada;
+  border-right: 5px solid rgb(0, 0, 0);
 }
 
 .floaterdiv {
@@ -877,4 +886,21 @@ label {
   color:black;
   margin-left:10rem;
   margin-top:5px;
+}
+.author{
+  width:100%;
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.author input{
+  width:30rem;
+}
+.author input::placeholder{
+ padding-left:3px;
+  color:black;
+}
+.author button{
+  margin-left:-2.1rem;
+  height:2.5rem;
 }

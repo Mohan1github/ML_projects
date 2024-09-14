@@ -59,7 +59,7 @@ const forgotpassword = async (req, res) => {
     const email = req.body.email
     try {
         const check = await User.find(email)
-        if (email) {
+        if (check) {
             res.redirect("/update-newpassword")
         }
         else {

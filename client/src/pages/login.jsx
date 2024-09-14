@@ -8,33 +8,25 @@ const Login = () => {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const navigate = useNavigate()
-    const handlelogin = async () => {
-        try {
-            const login = await axios.post("", { email, password })
-            if (login) {
-                if(Response.data.status == "success"){
-                console.log("Successfully logged in")
-                navigate("/")
-                res.status(200).json({
-                    success: true,
-                    message: "Logged in",
-                    data: login
-                })}
-                else{
-                    navigate("/login")
-                }
+    const handlelogin = async (req,res) => {
+       try{
+        console.log("Enail:",email,"password:",password)
+            const req = await axios.post("http://localhost:5001/auth/login",{email,password})
+            if(req.result === "success"){
+                console.log(req.result)
+                navigate("/");
+                console.log("login successfull")
             }
-        }
-        catch (err) {
-            if (err) {
-                console.log("Data communication error")
-                res.status(500).json({
-                    success: false,
-                    message: "Something went wrong"
-                })
+            else{
+
             }
+       }
+       catch(err){
+            console.log("internal server error")
+            console.log(err)
+       }
+       
         }
-    }
     return (
         <motion.div initial={{opacity:0}}
         animate={{opacity:1}}
